@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head> 
+      <meta charset = "utf-8"> 
+      <title>Dropdown example</title> 
+</head> 
+
+<nav>
+<div class="border-out">
+<a class="navbar-brand" href="https://www.achieversit.com/"><img src="https://www.achieversit.com/assets/images/AIT-white.jpg" alt="AIT"></a>
+<div class="nav_elements">
+<ul class="menu_items">
+	<li class="nav-item">
+				<a class="nav-link" href="#">HOME</a>
+	</li>
+	<li class="nav-item dropdown">
+				<a class="nav-link dropbtn" href="#">DROPDOWN</a>
+				<div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</div>
+	</li>
+	<li class="nav-item">
+				<a class="nav-link" href="#">LEFT SIDEBAR</a>
+	</li>
+	<li class="nav-item">
+				<a class="nav-link" href="#">RIGHT SIDEBAR</a>
+	</li>
+	<li class="nav-item">
+				<a class="nav-link" href="#">NO SIDEBAR</a>
+	</li>
+</ul>
+</div>
+</div>
+</nav>
+</html>
+
+
+<style>
+ul.menu_items {
+    list-style: none;
+    display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+    margin-left: 100px;
+}
+nav {
+    display: flex;
+	background-image: linear-gradient(to right, rgba(14,14,14,1), rgba(93,101,103,1),rgba(14,14,14,1));
+}
+.nav-link {
+    padding: 8px 20px;
+    color: #fff;
+}
+.border-out {
+    display: flex;
+    margin: 20px 120px;
+	background: #313339;
+    border: 10px solid;
+	border-radius: 10px;
+	border-image-source: linear-gradient(to right, rgba(14,14,14,100%), rgba(93,101,103,73%),rgba(14,14,14,100%));
+	border-image-slice: 1;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+a.nav-link.dropbtn:hover {
+    background: #282b2e;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #494c52;
+  min-width: 160px;
+  top: 58px;
+}
+.dropdown-content a:hover {background-color: #27292d}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content>a {
+    display: block;
+    text-decoration: none;
+	color: #ffffff;
+	padding: 10px 20px;
+}
+a{
+	text-decoration: none;
+}
+.dropdown-content:hover {
+    display: block;
+}
+</style>
